@@ -27,18 +27,19 @@ All values are optional
     "name": "",
     "version": "",
     "battery": ""
-
 }
 ```
+
 * POST `/radio/{id}/sensor/{childId}/reading` - Save sensor readings for this radio and sensor
 ```json
 {
+    "type": "",
     "value": "",
     "time": ""
 }
 ```
 
-* PUT `/radio/{id}/sensor/{childId}` - modify sensor values
+* PUT `/radio/{id}/sensor/{childId}` - modify sensor information.  All values are optional.
 ```json
 {
     "type": "",
@@ -49,6 +50,7 @@ All values are optional
 * POST `/log` - Create new log message.  Request is in the following form.
 ```json
 {
-    "message": ""
+    "message": "",
+    "time": ""
 }
 ```

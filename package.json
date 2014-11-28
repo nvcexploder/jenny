@@ -1,6 +1,6 @@
 {
   "name": "jenny",
-  "version": "0.2.1",
+  "version": "0.6.0",
   "description": "Jenny tells a remote server whats happening with your MySensors connected via a serial port",
   "main": "index.js",
   "scripts": {
@@ -21,15 +21,16 @@
   },
   "homepage": "https://github.com/geek/jenny",
   "dependencies": {
+    "bossy": "1.x.x",
     "hoek": "2.x.x",
-    "sensors": "0.x.x",
+    "cowboymouth": "0.x.x",
     "serialport": "1.4.x",
     "wreck": "5.x.x",
-    "bossy": "1.x.x"
+    "ws": "^0.4.32"
   },
   "devDependencies": {
     "code": "1.x.x",
-    "lab": "5.x.x",
-    "hapi": "7.x.x"
+    "hapi": "^8.0.0-rc3",
+    "lab": "5.x.x"
   }
 }
